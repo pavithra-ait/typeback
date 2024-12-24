@@ -48,7 +48,7 @@ const getProductone = async (id: string): Promise<unknown> => {
 };
 
 
-async function createProduct(product: ProductData): Promise<any> {
+async function createProduct(product: ProductData): Promise<unknown> {
     const response = await axios.post(`${baseUrl}/create`, product);
     return {
         success: true,
