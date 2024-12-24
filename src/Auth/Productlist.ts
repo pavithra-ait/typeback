@@ -27,7 +27,7 @@ class ProductController {
     }
 
     async createdata(req: Request, res: Response) {
-        const files = req.file; // This will be of type 'File[] | undefined'
+        const files = req.file; 
         try {
             if (!files) {
                 res.status(400).json({ error: 'Image file is required.' });

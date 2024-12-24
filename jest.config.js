@@ -1,11 +1,14 @@
-module.exports = {
+const jest = {
   preset: "ts-jest",
   testEnvironment: "node",
   transform: {
     "^.+\\.tsx?$": ["ts-jest", { isolatedModules: true }],
-    "^.+\\.js$": "babel-jest", // Use Babel for JS files
+    "^.+\\.js$": "babel-jest",
   },
   transformIgnorePatterns: [
-    "node_modules/(?!chai)" // Transform chai
+    "node_modules/(?!chai)" 
   ],
 };
+
+export default jest;
+

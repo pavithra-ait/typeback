@@ -1,6 +1,5 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
-// Define the TypeScript interface for the Product
 interface IProduct extends Document {
     Name: string;
     Price: string;
@@ -9,7 +8,6 @@ interface IProduct extends Document {
     Stock: string;
 }
 
-// Define the Mongoose Schema for Product
 const productSchema: Schema<IProduct> = new Schema({
     Name: { type: String, required: true },
     Price: { type: String, required: true },
